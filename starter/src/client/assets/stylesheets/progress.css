@@ -2,7 +2,8 @@
 
 /* -------------------  MOBILE  --------------------- */
 header {
-  background-image: url('https://via.placeholder.com/1150');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+  url('../images/1.jpg');
 }
 
 main#two-columns {
@@ -12,6 +13,7 @@ main#two-columns {
 
 main#two-columns section {
     max-width: 50vw;
+    width: 100%;
 }
 
 section#accelerate button {
@@ -29,17 +31,23 @@ section#accelerate button {
     font-size: 70px;
 }
 
+#leaderBoard {
+    max-width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.highlight {
+    background-color: yellow;
+}
+
 /* -------------------  TABLET  --------------------- */
-@media (min-width: 768px) {
-
-}
-
-/* -------------------  DESKTOP  -------------------- */
-
-@media (min-width: 1224px) {
-}
-
-/* -------------------  LARGE SCREENS  -------------- */
-
-@media (min-width: 1824px) {
+@media (max-width: 768px) {
+    main#two-columns {
+        flex-direction: column;
+    }
+    main#two-columns section {
+        flex: 1;
+    }
 }
